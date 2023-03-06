@@ -1,95 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bentham&family=Khula:wght@300;400;600;700;800&display=swap');
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+*{
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
-
-/* HTML5 display-role reset for older browsers */
 
 article,
 aside,
@@ -123,7 +40,6 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
     content: none;
 }
 
@@ -165,8 +81,11 @@ body {
 }
 
 header {
-    width: 100%;
-    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     z-index: 3;
     color: white;
     padding: 80px 0;
@@ -189,17 +108,12 @@ header a {
     font-size: 40px;
 }
 
-.header_warper nav {
-    /* padding: 15px; */
-}
-
-.header_warper nav a {
+header nav a {
     padding: 0 20px;
 }
 
 .header_acc {
     display: flex;
-    /* margin-top: 10px; */
 }
 
 .header_acc p {
@@ -213,7 +127,7 @@ header a {
 
 .sky {
     position: absolute;
-    top: 0px;
+    top: 0;
     width: 100vw;
     height: 80vh;
     z-index: 1;
@@ -222,16 +136,16 @@ header a {
 
 .mountain {
     position: absolute;
-    top: 61vh;
+    top: 40vh;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    object-fit: cover;
+    /*object-fit: ;*/
 }
 
 .man {
     position: absolute;
-    top: 80vh;
+    top: 60vh;
     width: 100vw;
     height: 100vh;
     z-index: 1;
@@ -250,7 +164,7 @@ header a {
 
 .shadows_bottom {
     position: absolute;
-    top: 80vh;
+    top: 60vh;
     width: 100vw;
     height: 100vh;
     z-index: 2;
@@ -263,9 +177,8 @@ header a {
     z-index: 3;
     justify-content: space-between;
     width: 90%;
-    margin: 0 auto;
+    margin: 150px auto 0;
     display: flex;
-    margin-top: 150px;
     color: white;
 }
 
@@ -307,7 +220,6 @@ header a {
 .navSite {
     margin-top: 50px;
     display: flex;
-    position: fixed;
     top: 30%;
     z-index: 3;
     right: 5%;
@@ -318,20 +230,24 @@ header a {
     text-align: right;
     color: white;
     font-size: 20px;
-    border-right: rticle 2px solid white;
+    border-right: 2px solid white;
     padding: 20px 20px;
 }
 
 main {
-    position: relative;
-    margin: 60vh 0;
     color: white;
     z-index: 4;
 }
 
+.back{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
 .warper_main {
     width: 70%;
-    margin: 0 auto;
+    margin: 80vh auto 0;
 }
 
 .first_main {
@@ -520,7 +436,7 @@ main {
 
     .first_main h3,
     .therd_main h3 {
-        left: 0%;
+        left: 0;
     }
 }
 
@@ -629,9 +545,8 @@ main {
         z-index: 3;
         justify-content: center;
         width: 90%;
-        margin: 0 auto;
+        margin: 40px auto 0;
         display: flex;
-        margin-top: 40px;
         color: white;
         flex-wrap: wrap;
         flex-direction: column-reverse;
