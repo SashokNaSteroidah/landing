@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Khula:wght@300;400;600;700;800&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+
+::selection {
+    color: white;
+    background: rgb(0, 0, 0);
+}
+
+
+
+
+html {
+    height: 100%;
+    transform-style: preserve-3d;
+    font-family: 'Khula', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background: #0B1D26;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    color: white;
+    padding: 80px 0;
+}
+
+header a {
+    color: white;
+}
+
+.header_warper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Bentham', serif;
+    font-size: 40px;
+}
+
+.header_warper nav {
+    /* padding: 15px; */
+}
+
+.header_warper nav a {
+    padding: 0 20px;
+}
+
+.header_acc {
+    display: flex;
+    /* margin-top: 10px; */
+}
+
+.header_acc p {
+    padding: 6px 10px;
+}
+
+.menuBurg {
+    fill: white;
+    display: none;
+}
+
+.sky {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 80vh;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.mountain {
+    position: absolute;
+    top: 61vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.man {
+    position: absolute;
+    top: 80vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.shadows_top {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-size: cover;
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+}
+
+.shadows_bottom {
+    position: absolute;
+    top: 80vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+}
+
+.MainWarper {
+    position: relative;
+    z-index: 3;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 150px;
+    color: white;
+}
+
+.socialMedia {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.socialMedia p {
+    transform: rotate(90deg) translatey(26px);
+}
+
+.socialMedia_svg {
+    margin: 40px 0 10px;
+}
+
+.mainpart {
+    font-size: 20px;
+    width: 40%;
+}
+
+.mainpart h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FBD784;
+}
+
+.mainpart p {
+    font-size: 70px;
+    padding: 20px 0;
+    font-family: 'Bentham', serif;
+}
+
+.mainpart h2 {
+    font-weight: bold;
+}
+
+.navSite {
+    margin-top: 50px;
+    display: flex;
+    position: fixed;
+    top: 30%;
+    z-index: 3;
+    right: 5%;
+    flex-direction: column;
+}
+
+.navSite a {
+    text-align: right;
+    color: white;
+    font-size: 20px;
+    border-right: rticle 2px solid white;
+    padding: 20px 20px;
+}
+
+main {
+    position: relative;
+    margin: 60vh 0;
+    color: white;
+    z-index: 4;
+}
+
+.warper_main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.first_main {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first_main article {
+    width: 40vw;
+    padding-right: 10vw;
+}
+
+.first_main img {
+    /* width: 30vw;
+    height: 50vh; */
+    object-fit: cover;
+}
+
+.first_main h1 {
+    color: #FBD784;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.first_main h2 {
+    font-family: 'Bentham', serif;
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+.first_main p {
+    font-size: 18px;
+}
+
+.first_main section {
+    margin-top: 50px;
+    display: flex;
+}
+
+.first_main section p {
+    padding-right: 10px;
+}
+
+.first_main a {
+    color: #FBD784;
+    font-size: 20px;
+}
+
+.first_main h3 {
+    position: absolute;
+    opacity: 0.1;
+    left: 3%;
+    line-height: 250px;
+    font-weight: bold;
+    font-size: 200px;
+}
+
+.second_main {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second_main article {
+    width: 30vw;
+}
+
+.second_main h1 {
+    color: #FBD784;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.second_main h2 {
+    font-family: 'Bentham', serif;
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+.second_main p {
+    font-size: 18px;
+}
+
+.second_main section {
+    margin-top: 50px;
+    display: flex;
+}
+
+.second_main section p {
+    padding-right: 10px;
+}
+
+.second_main a {
+    color: #FBD784;
+    font-size: 20px;
+}
+
+.second_main h3 {
+    position: absolute;
+    opacity: 0.1;
+    left: 85%;
+    line-height: 250px;
+    font-weight: bold;
+    font-size: 200px;
+}
+
+.therd_main {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.therd_main article {
+    /* padding: 0 20vh 0 0 ; */
+    width: 30vw;
+}
+
+.therd_main h1 {
+    color: #FBD784;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.therd_main h2 {
+    font-family: 'Bentham', serif;
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+.therd_main p {
+    font-size: 18px;
+}
+
+.therd_main section {
+    margin-top: 50px;
+    display: flex;
+}
+
+.therd_main section p {
+    padding-right: 10px;
+}
+
+.therd_main a {
+    color: #FBD784;
+    font-size: 20px;
+}
+
+.therd_main h3 {
+    position: absolute;
+    opacity: 0.1;
+    left: 3%;
+    line-height: 250px;
+    font-weight: bold;
+    font-size: 200px;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .first_main img {
+        width: 32vw;
+    }
+
+    .second_main img {
+        width: 32vw;
+    }
+
+    .therd_main img {
+        width: 32vw;
+    }
+
+    .second_main h3 {
+        left: 83%;
+    }
+
+    .first_main h3,
+    .therd_main h3 {
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+
+    .first_main img {
+        width: 28vw;
+    }
+
+    .second_main img {
+        width: 28vw;
+    }
+
+    .therd_main img {
+        width: 28vw;
+    }
+
+    .second_main,
+    .first_main,
+    .therd_main {
+        margin-top: 100px;
+    }
+
+    .first_main h3,
+    .therd_main h3,
+    .second_main h3 {
+        font-size: 15vw;
+    }
+
+    .mainpart p {
+        font-size: 5vw;
+    }
+
+    .first_main h2,
+    .second_main h2,
+    .therd_main h2 {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .first_main img {
+        width: 28vw;
+    }
+
+    .second_main img {
+        width: 28vw;
+    }
+
+    .first_main img,
+    .therd_main img,
+    .second_main img {
+        width: 90vw;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .first_main h3,
+    .therd_main h3,
+    .second_main h3 {
+        font-size: 100px;
+        margin-top: 140px;
+    }
+
+    .first_main article,
+    .second_main article,
+    .therd_main article {
+        width: 90vw;
+        padding: 50px 0 0 0;
+        /* margin: 0 auto; */
+    }
+
+    .second_main,
+    .first_main,
+    .therd_main {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .second_main {
+        flex-direction: column;
+    }
+
+    .menuBurg {
+        fill: white;
+        display: block;
+    }
+
+    .header_warper nav,
+    .acc,
+    .navSite,
+    .mainpart h2 {
+        display: none;
+    }
+
+    .mainpart {
+        width: 90vw;
+    }
+
+    .MainWarper {
+        position: relative;
+        z-index: 3;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 40px;
+        color: white;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .socialMedia p {
+        transform: none;
+    }
+
+    .socialMedia_svg {
+        margin: 0 10px;
+    }
+
+    .socialMedia {
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .first_main h3,
+    .therd_main h3,
+    .second_main h3 {
+        font-size: 15vw;
+        margin-top: 140px;
+    }
+
+    .first_main h2,
+    .second_main h2,
+    .therd_main h2 {
+        font-size: 10vw;
+    }
+
+    .first_main p,
+    .second_main p,
+    .therd_main p {
+        font-size: 4vw;
+    }
+
+    .socialMedia {
+        margin-top: 5vw;
+    }
+
+    .mainpart p {
+        font-size: 12vw;
+    }
+
+    .second_main,
+    .first_main,
+    .therd_main {
+        margin-top: 350px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .first_main h3,
+    .therd_main h3,
+    .second_main h3 {
+        font-size: 15vw;
+        margin-top: 140px;
+    }
+
+    .first_main h2,
+    .second_main h2,
+    .therd_main h2 {
+        font-size: 10vw;
+    }
+
+    .first_main p,
+    .second_main p,
+    .therd_main p {
+        font-size: 4vw;
+    }
+
+    .socialMedia {
+        margin-top: 5vw;
+    }
+
+    .mainpart p {
+        font-size: 12vw;
+    }
+
+    .second_main,
+    .first_main,
+    .therd_main {
+        margin-top: 50vw;
+    }
+}
