@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bentham&family=Khula:wght@300;400;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -63,8 +63,6 @@ html::-webkit-scrollbar {
 }
 
 
-
-
 html {
     height: 100%;
     transform-style: preserve-3d;
@@ -80,7 +78,7 @@ body {
     background: #0B1D26;
 }
 
-header nav{
+header nav {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -90,7 +88,8 @@ header nav{
     color: white;
     padding: 80px 0;
 }
-header nav ul{
+
+header nav ul {
     display: flex;
 }
 
@@ -115,7 +114,7 @@ header nav a {
     padding: 0 20px;
 }
 
-.acc {
+.acc article{
     display: flex;
     align-items: center;
 }
@@ -182,7 +181,7 @@ header nav a {
     z-index: 3;
     justify-content: space-between;
     width: 90%;
-    margin: 0px auto 0;
+    margin: 0 auto;
     display: flex;
     color: white;
 }
@@ -222,7 +221,7 @@ header nav a {
     font-weight: bold;
 }
 
-.navSite ul{
+.navSite ul {
     margin-top: 50px;
     display: flex;
     top: 30%;
@@ -239,7 +238,7 @@ header nav a {
     padding: 20px 20px;
 }
 
-.navSite a{
+.navSite a {
     color: white;
 }
 
@@ -248,7 +247,7 @@ main {
     z-index: 4;
 }
 
-.back{
+.back {
     position: absolute;
     top: 0;
     z-index: -1;
@@ -302,7 +301,7 @@ main {
     font-size: 20px;
 }
 
-.first_main h4{
+.first_main h4 {
     position: absolute;
     opacity: 0.1;
     left: 3%;
@@ -415,14 +414,14 @@ main {
     font-size: 200px;
 }
 
-footer{
+footer {
     margin: 0 auto;
     width: 90vw;
     color: white;
     padding: 200px 0 10px;
 }
 
-footer nav{
+footer nav {
     display: flex;
     justify-content: space-between;
 }
@@ -490,6 +489,10 @@ footer nav{
 
 @media screen and (max-width: 850px) {
 
+    header nav a{
+        padding: 0;
+    }
+
     .first_main img {
         width: 28vw;
     }
@@ -506,9 +509,9 @@ footer nav{
         object-fit: cover;
     }
 
-    .first_main h3,
-    .therd_main h3,
-    .second_main h3 {
+    .first_main h4,
+    .therd_main h4,
+    .second_main h4 {
         font-size: 100px;
         margin-top: 140px;
     }
@@ -531,6 +534,10 @@ footer nav{
         flex-direction: column-reverse;
     }
 
+    .first_main {
+        margin-top: 400px;
+    }
+
     .second_main {
         flex-direction: column;
     }
@@ -540,8 +547,8 @@ footer nav{
         display: block;
     }
 
-    menu_pc,
-    .acc,
+    .menu_pc,
+    .acc article,
     .navSite,
     .mainpart h3 {
         display: none;
@@ -563,7 +570,7 @@ footer nav{
         flex-direction: column-reverse;
     }
 
-    .socialMedia p {
+    .socialMedia h2 {
         transform: none;
     }
 
@@ -576,27 +583,34 @@ footer nav{
         align-items: center;
     }
 
+    footer nav h1{
+        font-size: 4vw;
+    }
+    footer nav p{
+        font-size: 4vw;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
 
-    .first_main h3,
-    .therd_main h3,
-    .second_main h3 {
+    .first_main h4,
+    .therd_main h4,
+    .second_main h4 {
         font-size: 15vw;
         margin-top: 140px;
     }
 
-    .first_main h2,
-    .second_main h2,
-    .therd_main h2 {
+    .first_main h3,
+    .second_main h3,
+    .therd_main h3 {
         font-size: 10vw;
     }
 
     .first_main p,
     .second_main p,
     .therd_main p {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .socialMedia {
@@ -610,22 +624,29 @@ footer nav{
     .second_main,
     .first_main,
     .therd_main {
+        margin-top: 100px;
+    }
+
+    .first_main {
         margin-top: 350px;
+    }
+    .mountain{
+        object-fit: cover;
     }
 }
 
 @media screen and (max-width: 330px) {
 
-    .first_main h3,
-    .therd_main h3,
-    .second_main h3 {
+    .first_main h4,
+    .therd_main h4,
+    .second_main h4 {
         font-size: 15vw;
         margin-top: 140px;
     }
 
-    .first_main h2,
-    .second_main h2,
-    .therd_main h2 {
+    .first_main h3,
+    .second_main h3,
+    .therd_main h3 {
         font-size: 10vw;
     }
 
@@ -646,6 +667,22 @@ footer nav{
     .second_main,
     .first_main,
     .therd_main {
-        margin-top: 50vw;
+        margin-top: 10vw;
+    }
+
+    .first_main{
+        margin-top: 200px;
+    }
+
+    .logo{
+        font-size: 10vw;
+        padding: 0;
+    }
+
+    .first_main img, .therd_main img, .second_main img {
+        height: 250px;
+    }
+    footer{
+        padding: 20px 0 0;
     }
 }
