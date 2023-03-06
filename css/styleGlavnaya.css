@@ -48,25 +48,14 @@ table {
     border-spacing: 0;
 }
 
-input::-webkit-input-placeholder {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
 
-html::-webkit-scrollbar {
-    width: 0;
-}
-
-::selection {
-    color: white;
-    background: rgb(0, 0, 0);
-}
 
 
 html {
     height: 100%;
     transform-style: preserve-3d;
     font-family: 'Khula', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -114,7 +103,7 @@ header nav a {
     padding: 0 20px;
 }
 
-.acc article{
+.acc div{
     display: flex;
     align-items: center;
 }
@@ -181,7 +170,7 @@ header nav a {
     z-index: 3;
     justify-content: space-between;
     width: 90%;
-    margin: 0 auto;
+    margin: 150px auto 0;
     display: flex;
     color: white;
 }
@@ -190,6 +179,10 @@ header nav a {
     margin-top: 75px;
     display: flex;
     flex-direction: column;
+}
+
+.socialMedia ul{
+    display: flex;
 }
 
 .socialMedia h2 {
@@ -255,7 +248,7 @@ main {
 
 .first_main {
     width: 70%;
-    margin: 80vh auto 0;
+    margin: 60vh auto 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -348,9 +341,19 @@ main {
     padding-right: 10px;
 }
 
-.second_main a {
+.second_main a,
+.first_main a,
+.therd_main a{
     color: #FBD784;
     font-size: 20px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.second_main a svg{
+    padding-left: 5px;
+    width: 2vw;
 }
 
 .second_main h4 {
@@ -464,6 +467,10 @@ footer nav {
         width: 28vw;
     }
 
+    .logo{
+        font-size:30px;
+    }
+
     .second_main,
     .first_main,
     .therd_main {
@@ -521,7 +528,6 @@ footer nav {
     .therd_main article {
         width: 90vw;
         padding: 50px 0 0 0;
-        /* margin: 0 auto; */
     }
 
     .second_main,
@@ -548,7 +554,7 @@ footer nav {
     }
 
     .menu_pc,
-    .acc article,
+    .acc div,
     .navSite,
     .mainpart h3 {
         display: none;
@@ -593,6 +599,17 @@ footer nav {
 }
 
 @media screen and (max-width: 600px) {
+
+    .MainWarper{
+        margin-top: 100px;
+    }
+
+    header nav{
+        padding: 20px 5px;
+    }
+    .menuBurg{
+        width: 10vw;
+    }
 
     .first_main h4,
     .therd_main h4,
@@ -643,6 +660,19 @@ footer nav {
         font-size: 15vw;
         margin-top: 140px;
     }
+    .MainWarper{
+        margin-top: 50px;
+    }
+    .mainpart h2{
+        font-size: 4vw;
+    }
+
+    .first_main a svg,
+    .second_main a svg,
+    .therd_main a svg{
+        padding-left: 5px;
+        width: 4vw;
+    }
 
     .first_main h3,
     .second_main h3,
@@ -661,7 +691,17 @@ footer nav {
     }
 
     .mainpart p {
-        font-size: 12vw;
+        font-size: 10vw;
+    }
+    .socialMedia h2{
+        font-size: 5vw;
+    }
+
+    .socialMedia_svg{
+        width: 8vw;
+    }
+    .socialMedia_svg1{
+        width: 8vw;
     }
 
     .second_main,
@@ -680,7 +720,7 @@ footer nav {
     }
 
     .first_main img, .therd_main img, .second_main img {
-        height: 250px;
+        height: 30vh;
     }
     footer{
         padding: 20px 0 0;
