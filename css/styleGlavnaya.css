@@ -133,7 +133,6 @@ header nav a {
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    /*object-fit: ;*/
 }
 
 .man {
@@ -183,13 +182,14 @@ header nav a {
 
 .socialMedia ul{
     display: flex;
+    flex-direction: column;
 }
 
 .socialMedia h2 {
     transform: rotate(90deg) translatey(26px);
 }
 
-.socialMedia_svg {
+.socialMedia_svg{
     margin: 40px 0 10px;
 }
 
@@ -208,6 +208,12 @@ header nav a {
     font-size: 70px;
     padding: 20px 0;
     font-family: 'Bentham', serif;
+}
+
+.mainpart img{
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
 }
 
 .mainpart h2 {
@@ -350,10 +356,17 @@ main {
     margin-top: 10px;
     align-items: center;
 }
-
+.first_main a svg,
+.therd_main a svg,
 .second_main a svg{
     padding-left: 5px;
     width: 2vw;
+}
+.first_main a img,
+.therd_main a img,
+.second_main a img{
+    padding-left: 10px;
+    width: 1vw;
 }
 
 .second_main h4 {
@@ -516,6 +529,14 @@ footer nav {
         object-fit: cover;
     }
 
+    .first_main a img,
+    .therd_main a img,
+    .second_main a img {
+        width: 2vw;
+        height: 10px;
+        object-fit: cover;
+    }
+
     .first_main h4,
     .therd_main h4,
     .second_main h4 {
@@ -589,11 +610,15 @@ footer nav {
         align-items: center;
     }
 
+    .socialMedia ul{
+        flex-direction: row ;
+    }
+
     footer nav h1{
-        font-size: 4vw;
+        font-size: 2vw;
     }
     footer nav p{
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
 }
@@ -648,6 +673,13 @@ footer nav {
         margin-top: 350px;
     }
     .mountain{
+        object-fit: cover;
+    }
+    .first_main a img,
+    .therd_main a img,
+    .second_main a img {
+        width: 4vw;
+        height: 10px;
         object-fit: cover;
     }
 }
@@ -722,6 +754,15 @@ footer nav {
     .first_main img, .therd_main img, .second_main img {
         height: 30vh;
     }
+
+    .first_main a img,
+    .therd_main a img,
+    .second_main a img {
+        width: 4vw;
+        height: 5px;
+        object-fit: cover;
+    }
+
     footer{
         padding: 20px 0 0;
     }
