@@ -522,7 +522,7 @@ footer nav {
     .acc div,
     .navSite,
     .mainpart h3 {
-
+        display: none;
     }
 
     .mainpart {
