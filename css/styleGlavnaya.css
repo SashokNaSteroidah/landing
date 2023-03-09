@@ -488,6 +488,7 @@ footer nav {
     .second_main h4 {
         font-size: 100px;
         margin-top: 140px;
+        display: none;
     }
 
     .first_main article,
@@ -524,7 +525,7 @@ footer nav {
     .acc div,
     .navSite,
     .mainpart h3 {
-        display: none;
+
     }
 
     .mainpart {
