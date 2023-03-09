@@ -587,6 +587,7 @@ footer nav {
     .second_main h4 {
         font-size: 15vw;
         margin-top: 140px;
+        display: none;
     }
 
     .first_main h3,
